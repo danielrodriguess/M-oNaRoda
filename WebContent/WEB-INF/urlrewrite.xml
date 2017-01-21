@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <!DOCTYPE urlrewrite
+        PUBLIC "-//tuckey.org//DTD UrlRewrite 3.0//EN"
+        "http://www.tuckey.org/res/dtds/urlrewrite3.0.dtd"> 
+            <urlrewrite>
+                    <rule>
+           <from>/perfil/(.*)$</from>
+           <to>/adicionar?acao=mostrarfavorito&amp;idd=$1</to>
+        </rule>
+        <rule>
+           <from>/gerenciamento/(.*)$</from>
+           <to>/gerenciamento?acao=meuperfil&amp;idd=$1</to>
+        </rule>
+        <rule>
+           <from>/cadastro/(.*)$</from>
+           <to>/cadastro?acao=mostraroferta&amp;idd=$1</to>
+        </rule>
+        <rule>
+        <from>/index/(.*)$</from>
+        <to>/cadastro?acao=minhasofertas&amp;idd=$1</to>
+        </rule>
+        <rule>
+           <from>/pesquisa/(.*)$</from>
+           <to>/gerenciamento?acao=oferta&amp;idd=$1</to>
+        </rule>
+        <rule>
+           <from>/recomendacao/(.*)$</from>
+           <to>/gerenciamento?acao=recomendacao&amp;idd=$1</to>
+        </rule>
+		<rule>
+           <from>/contato/(.*)$</from>
+           <to>/contato?acao=erro&amp;idd=$1</to>
+        </rule>
+    </urlrewrite>     
